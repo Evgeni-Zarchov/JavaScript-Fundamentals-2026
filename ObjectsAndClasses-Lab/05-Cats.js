@@ -1,0 +1,26 @@
+function animal(arr) {
+    class Cat {
+        constructor(name, age) {
+            this.name = name,
+                this.age = age
+        }
+
+        meow() {
+            console.log(`${this.name}, age ${this.age} says Meow`);
+        }
+    }
+
+    for (let el of arr) {
+        let tokens = el.split(" ");
+
+        let name = tokens[0];
+        let age = Number(tokens[1]);
+
+        let cats = new Cat(name, age);
+
+        cats.meow();
+    }
+
+}
+
+animal(['Mellow 2', 'Tom 5']);

@@ -29,6 +29,7 @@ function dungeon(input) {
             console.log(`You healed for ${dmgGoldOrHeal} hp.`);
             console.log(`Current health: ${hp} hp.`);
             continue;
+
         } else {
 
 
